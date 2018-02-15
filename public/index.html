@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Speech Recognition</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<div ng-app='speech'>
+  <div ng-controller="speechController as spc">
+  	<ul>
+  		<li><a href="" ng-click="spc.startForMobile()" ng-init="talk='mobile'"  class="round green">Mobile<span class="round">Talk to phone</span></a></li>
+		<li><a href="" ng-click="spc.startForPi()" ng-init="talk='pi'" class="round green">Pi<span class="round">Talk to pi</span></a></li>
+	</ul>
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
